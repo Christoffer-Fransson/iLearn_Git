@@ -45,7 +45,7 @@ pull                    see 3pull more efficient fetches and merges in one go.
 git init                    initializes a git repository
 
 # log
-shows all the changes made
+shows all the changes madecd
 git log
 git log --oneline
 git log -p                      shows all the various changess.
