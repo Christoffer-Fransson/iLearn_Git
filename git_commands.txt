@@ -7,18 +7,16 @@ git add all         Same as git add .
 git add -a          Same as git add .
 
 # branch
+git branch                                              shows current branches
 git branch <name of branch>                             created a branch with the given name
 git switch -c <new branch name>                         creates new branch
-git branch                                              shows current branches
 git switch <name of branch>                             switchs to the specified branch
 
 # branch merging
 git merge -m "<message"> <name of branch>               to merge back into branch that is active>
 git branch -d <branch name>                             deletes the specified branch
+git branch --delete <branch name>                       deletes the specified branch
 
-
-# diff 
-git diff [filename]     Difference in files
 
 # committ
 git commit -m "<enter your message>"
@@ -26,6 +24,17 @@ git commit -a -m"<message"> skips the staging area
 git commit -m "<message"> --amend updates the commit message with a new oneline
 
 see git restore for how to unstage files
+
+
+
+# diff 
+git diff [filename]     Difference in files
+
+
+# fetch
+git fetch               downloads all the history from the remote tracking branches, to merge it in just type merge
+merge                   merges all downloaded history from remote repo into the local repo. 
+pull                    see 3pull more efficient fetches and merges in one go. 
 
 
 # ignore
@@ -42,8 +51,14 @@ git log --oneline
 git log -p                      shows all the various changess.
 
 
+# pull                          
+git pull                        downloads all the history from the remote tracking branches and automatically merges it locally  
+git pull <remote alias> <branch>
+
 # push
+git branch -M <name of branch>                  creates a branch with the name
 git push -u <name> main             pushes to alias remote repo the named branch.
+
 git push --all                      pushes all branches
 
 # status
@@ -59,6 +74,9 @@ git rebase      opens up editor
 git remote -v                   shows the url that are currently setup with remote repositories
 git remote rm <alias of url>    removes the corresponding remote url
 git remote rm <remote-url>      removes the corresponding remote url
+git remote add <alias> <remote-url to github .gt file> eg. git remote -add origin https://www.github.com/username/repositoryname.git
+
+
 # restore
 git restore --staged >filename>    
 git restore <filename>          restores deleted file    
