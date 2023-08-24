@@ -1,0 +1,81 @@
+# This file contains the overview list of commands that I want to keep for future reference
+
+# add
+git add [filename]  Adds specific file to staging
+git add .           Adds all uncommited files (be careful might add env files etc.)
+git add all         Same as git add .
+git add -a          Same as git add .
+
+# branch
+git branch <name of branch>                             created a branch with the given name
+git switch -c <new branch name>                         creates new branch
+git branch                                              shows current branches
+git switch <name of branch>                             switchs to the specified branch
+
+# branch merging
+git merge -m "<message"> <name of branch>               to merge back into branch that is active>
+git branch -d <branch name>                             deletes the specified branch
+
+
+# diff 
+git diff [filename]     Difference in files
+
+# committ
+git commit -m "<enter your message>"
+git commit -a -m"<message"> skips the staging area
+git commit -m "<message"> --amend updates the commit message with a new oneline
+
+see git restore for how to unstage files
+
+
+# ignore
+.gitignore create a file with the ending .gitignore and edit it. Either specify root filepath to specific file or folder to ignore. can also put in file endings to ignore etc. 
+
+
+#init
+git init                    initializes a git repository
+
+# log
+shows all the changes made
+git log
+git log --oneline
+git log -p                      shows all the various changess.
+
+
+# push
+git push -u <name> main             pushes to alias remote repo the named branch.
+git push --all                      pushes all branches
+
+# status
+git status          shows which branch you are on, files that are committed to stagin, unstaged files etc. 
+
+# reset - restores back to previous commit
+git reset <hashtag>         # note check the hashtag by using git log --oneline
+
+# rebase
+git rebase      opens up editor
+
+# remote
+git remote -v                   shows the url that are currently setup with remote repositories
+git remote rm <alias of url>    removes the corresponding remote url
+git remote rm <remote-url>      removes the corresponding remote url
+# restore
+git restore --staged >filename>    
+git restore <filename>          restores deleted file    
+
+
+
+
+
+# rename files 
+git mv "<oldfilename"> "<new filename>"
+# remove files
+git rm "<filename>"
+(can also use the file explorer directly)
+
+#review the different commits
+git log
+git log --oneline
+
+exit view (when you have multiple pages to "page through" and stops and end.)
+press q
