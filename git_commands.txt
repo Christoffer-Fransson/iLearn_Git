@@ -18,7 +18,7 @@ git branch -d <branch name>                             deletes the specified br
 git branch --delete <branch name>                       deletes the specified branch
 git checkout <branch name>                              checks out (moves you to edit the specified branch)
 
-# committ
+# commit
 git commit -m "<enter your message>"
 git commit -a -m"<message"> skips the staging area
 git commit -m "<message"> --amend updates the commit message with a new oneline
