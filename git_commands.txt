@@ -10,13 +10,18 @@ git add -a          Same as git add .
 git branch                                              shows current branches
 git branch <name of branch>                             created a branch with the given name
 git switch -c <new branch name>                         creates new branch
+git branch -m [new branch name]                         renames branch into new name
 git switch <name of branch>                             switchs to the specified branch
+
 
 # branch merging
 git merge -m "<message"> <name of branch>               to merge back into branch that is active>
 git branch -d <branch name>                             deletes the specified branch
 git branch --delete <branch name>                       deletes the specified branch
 git checkout <branch name>                              checks out (moves you to edit the specified branch)
+
+# code
+code [filename.xxx]                                     Opens up the file in text editior within visual studio code (bash terminal command)
 
 # commit
 git commit -m "<enter your message>"
