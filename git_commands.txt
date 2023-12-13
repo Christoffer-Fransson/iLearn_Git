@@ -11,6 +11,7 @@ git branch                                              shows current branches
 git branch <name of branch>                             created a branch with the given name
 git switch -c <new branch name>                         creates new branch
 git switch <name of branch>                             switchs to the specified branch
+git push --set-upstream origin <branchname>             pushes active branch into upstream named branch.
 
 # branch merging
 git merge -m "<message"> <name of branch>               to merge back into branch that is active>
@@ -23,6 +24,7 @@ git commit -m "<enter your message>"
 git commit -a -m"<message"> skips the staging area
 git commit -m "<message"> --amend updates the commit message with a new oneline
 
+UNSTAGE
 see git restore for how to unstage files
 
 # Config
@@ -62,9 +64,9 @@ git pull <remote alias> <branch>
 
 # push
 git branch -M <name of branch>                  creates a branch with the name
-git push -u <name> main             pushes to alias remote repo the named branch.
+git push -u <name> main                         pushes to alias remote repo the named branch.
 
-git push --all                      pushes all branches
+git push --all                                  pushes all branches
 
 # status
 git status          shows which branch you are on, files that are committed to stagin, unstaged files etc. 
@@ -83,9 +85,10 @@ git remote add <alias> <remote-url to github .gt file> eg. git remote add origin
 
 
 # restore
-git restore --staged >filename>    
+git restore --staged <filename>    
 git restore <filename>          restores deleted file    
-
+git restore --source <ref>      restores a specific revision of the file. By default, the file will be restored to its last committed state. 
+git restore --patch             allows you to select individual chunks to restore. 
 
 
 
