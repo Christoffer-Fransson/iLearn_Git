@@ -1,0 +1,3 @@
+Keybindings - Edit
+    CTRL + K -> CTRL + S
+    
