@@ -1,0 +1,9 @@
+Keybindings - Edit
+    CTRL + K -> CTRL + S
+
+
+
+WINDOWS:
+
+Select all above cursors: CTRL + SHIFT + HOME (might have to press FN key on laptop)
+Select all below cursors: CTRL + SHIFT + END (might have to press FN key on laptop)
