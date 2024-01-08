@@ -3,6 +3,7 @@ Keybindings - Edit
 
 Keybindings - Native (default setting)
     CTRL + SHIFT + L - Selects all occurences of the marked text/code.
+    CTRL + F2 - same as CTRL + SHIFT + L
 
 WINDOWS:
 
